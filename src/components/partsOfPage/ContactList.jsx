@@ -17,7 +17,9 @@ const ContactList = () => {
     }
     return (
         <List>
-            <ContactsListItem contacts={filter ? listOfFilteredContacts : contacts} onClick={handlerClick} />    
+            <ContactsListItem contacts={filter ? listOfFilteredContacts : contacts}
+                onClick={handlerClick}
+            />    
         </List>
     )
 }
