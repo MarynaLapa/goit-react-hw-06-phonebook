@@ -1,14 +1,9 @@
-import { useEffect, useState } from "react"
-import { nanoid } from 'nanoid'
 import ContactForm from "./components/partsOfPage/contactForm/ContactForm";
 import Filter from "./components/partsOfPage/Filter";
 import ContactList from "./components/partsOfPage/ContactList";
 import { Title, TitleSection } from "./components/styled/style";
 import Section from "./components/partsOfPage/Section";
 import Container from "./components/partsOfPage/Container";
-import { useDispatch, useSelector } from "react-redux";
-import { setFilter } from "store/sliceFilter";
-import { addContacts } from "store/sliceContacts";
 
 const App = () => {
 
@@ -65,10 +60,7 @@ const App = () => {
           <Filter title={'Find contacts by name'} />
           
 
-            <ContactList 
-
-              // RemoveUser={handelerDelete}
-            />
+            <ContactList />
         </Container>
       </Section>
     </main>
