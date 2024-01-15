@@ -18,11 +18,10 @@ const contactsSlice = createSlice({
             reducer:  (state, { payload }) => {
                 state.contacts.push(payload)
             }, 
-            removeContact: (state, { payload }) => {
-                console.log('payload', payload)
-                // state.contacts = state.contacts.filter((el) => el.id !== payload)
+        },
+        removeContact: (state, { payload }) => {
+                state.contacts = state.contacts.filter((el) => el.id !== payload)
             }
-        }
     }
 })
 
